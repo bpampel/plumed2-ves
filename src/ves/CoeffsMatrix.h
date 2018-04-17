@@ -46,7 +46,6 @@ class CoeffsVector;
 class CoeffsMatrix:
   public CoeffsBase
 {
-public:
 private:
   std::vector<double> data;
   //
