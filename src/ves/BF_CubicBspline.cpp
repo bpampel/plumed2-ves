@@ -125,7 +125,7 @@ double BF_CubicBspline::spline(const double arg, double& deriv) const {
   }
   else {
     value = 4.0-6.0*x*x+3.0*x*x*x;
-    deriv = dx*(-12.0*x+9.0*x*x);
+    deriv = -12.0*x+dx*9.0*x*x;
     // value=x*x*x*0.5-x*x+2.0/3.0;
     // deriv=(3.0/2.0)*x*x-2.0*x;
   }
